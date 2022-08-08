@@ -6,13 +6,13 @@ using IceCream.Models.Entities;
 
 namespace IceCream.Data
 {
-    public partial class DbIcecreamParlourContext : DbContext
+    public partial class AppDbContext : DbContext
     {
-        public DbIcecreamParlourContext()
+        public AppDbContext()
         {
         }
 
-        public DbIcecreamParlourContext(DbContextOptions<DbIcecreamParlourContext> options)
+        public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)
         {
         }

@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<DbIcecreamParlourContext>(op =>
+builder.Services.AddDbContext<AppDbContext>(op =>
 {
     op.UseSqlServer(builder.Configuration.GetConnectionString("SQL_SERVER"));
 });
